@@ -21,6 +21,7 @@ class ViewController14: UIViewController,UICollectionViewDelegate,UICollectionVi
         nextOt.layer.cornerRadius = 25
         nextOt.layer.masksToBounds = true
         nextOt.isHidden = true
+        navigationItem.hidesBackButton = true
         
         
     }

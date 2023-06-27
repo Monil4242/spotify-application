@@ -10,6 +10,7 @@ import UIKit
 class librarayPage: UIViewController,UITableViewDelegate,UITableViewDataSource {
   
     var photo = [UIImage(named: "mc stan"),UIImage(named: "sachet"),UIImage(named: "yo yo"),UIImage(named: "king"),UIImage(named: "badshah"),UIImage(named: "divine")]
+    var photos = [UIImage(named: "mc stan"),UIImage(named: "sachet"),UIImage(named: "yo yo"),UIImage(named: "king"),UIImage(named: "badshah"),UIImage(named: "divine")]
     var name = ["MC STAN","Sachet Tandon","Yo Yo Honey Singh","King","Badshah","Divine"]
     var name2 = ["Artist","Artist","Artist","Artist","Artist","Artist"]
     @IBOutlet weak var artistOt: UIButton!
@@ -17,10 +18,16 @@ class librarayPage: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var tb: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         artistOt.layer.cornerRadius = 25
         artistOt.layer.masksToBounds = true
 
         
+    }
+    func navigation(photo:UIImage){
+        let navigate  = storyboard?.instantiateViewController(withIdentifier: "ViewControllercellnavigate") as! ViewControllercellnavigate
+        navigate.photo = photo
+        navigationController?.pushViewController(navigate, animated: true)
     }
     
 
@@ -47,6 +54,9 @@ class librarayPage: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigation(photo: photos[indexPath.row]!)
     }
 
 }

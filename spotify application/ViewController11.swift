@@ -68,6 +68,22 @@ class ViewController11: UIViewController,UITableViewDelegate,UITableViewDataSour
         let a = storyboard?.instantiateViewController(withIdentifier: "ViewController12") as! ViewController12
         navigationController?.pushViewController(a, animated: true)
     }
+    func savealert(){
+        let alert = UIAlertController.init(title: "Please Enter your email", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "save", style: .default,handler: { _ in
+            UserDefaults.standard.set(self.text1.text!, forKey: "")
+            
+        }))
+        present(alert, animated: true)
+    }
+    func showalert(title:String){
+        let alert = UIAlertController.init(title: "Error", message: title, preferredStyle: .alert)
+        alert.addAction(UIAlertAction.init(title: "OK", style: .default))
+        alert.addAction(UIAlertAction.init(title: "Cancel", style: .destructive))
+        present(alert, animated: true)
+        
+    }
+    
     
 
     
@@ -78,6 +94,12 @@ class ViewController11: UIViewController,UITableViewDelegate,UITableViewDataSour
     }
     
     @IBAction func createAccountButtonAction(_ sender: UIButton) {
-        navigate()
+        if text1.text == ""{
+            showalert(title: "Please enter your name")
+        }
+        if text1.text == "monilsojitra"{
+            navigate()
+        }
+       
     }
 }

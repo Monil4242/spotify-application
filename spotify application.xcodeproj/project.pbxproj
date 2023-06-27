@@ -45,10 +45,12 @@
 		8C5721932A0E020400CA3EB8 /* secondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5721922A0E020400CA3EB8 /* secondTableViewCell.swift */; };
 		8C5721952A0E066C00CA3EB8 /* firstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5721942A0E066C00CA3EB8 /* firstCollectionViewCell.swift */; };
 		8C61E7E42A1C7BC5006FB6FA /* searchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C61E7E32A1C7BC5006FB6FA /* searchCollectionViewCell.swift */; };
+		8C6279FF2A3055D3003BB16C /* TableViewCelllibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6279FE2A3055D3003BB16C /* TableViewCelllibrary.swift */; };
 		8C68B62629EEDAEE00ACE79C /* ViewController12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68B62529EEDAEE00ACE79C /* ViewController12.swift */; };
 		8C68B62829EEDD3900ACE79C /* myCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68B62729EEDD3900ACE79C /* myCollectionViewCell.swift */; };
 		8C6D461029F97D17004798A6 /* spotifypalylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D460F29F97D17004798A6 /* spotifypalylist.swift */; };
 		8C703BC42A0CC2AD00DCC3DF /* firstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C703BC32A0CC2AD00DCC3DF /* firstTableViewCell.swift */; };
+		8CDE46842A28672E005C55F1 /* ViewControllercellnavigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDE46832A28672E005C55F1 /* ViewControllercellnavigate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,10 +93,12 @@
 		8C5721922A0E020400CA3EB8 /* secondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTableViewCell.swift; sourceTree = "<group>"; };
 		8C5721942A0E066C00CA3EB8 /* firstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C61E7E32A1C7BC5006FB6FA /* searchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchCollectionViewCell.swift; sourceTree = "<group>"; };
+		8C6279FE2A3055D3003BB16C /* TableViewCelllibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCelllibrary.swift; sourceTree = "<group>"; };
 		8C68B62529EEDAEE00ACE79C /* ViewController12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController12.swift; sourceTree = "<group>"; };
 		8C68B62729EEDD3900ACE79C /* myCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C6D460F29F97D17004798A6 /* spotifypalylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotifypalylist.swift; sourceTree = "<group>"; };
 		8C703BC32A0CC2AD00DCC3DF /* firstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstTableViewCell.swift; sourceTree = "<group>"; };
+		8CDE46832A28672E005C55F1 /* ViewControllercellnavigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllercellnavigate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +116,6 @@
 		8C56669F29E7CCB600F072D8 = {
 			isa = PBXGroup;
 			children = (
-				8C496EAC2A1DD6BF000925FE /* libraryTableViewCell.swift */,
-				8C61E7E32A1C7BC5006FB6FA /* searchCollectionViewCell.swift */,
-				8C5721922A0E020400CA3EB8 /* secondTableViewCell.swift */,
 				8C5666AA29E7CCB600F072D8 /* spotify application */,
 				8C5666A929E7CCB600F072D8 /* Products */,
 			);
@@ -133,8 +134,11 @@
 			children = (
 				8C5666AB29E7CCB600F072D8 /* AppDelegate.swift */,
 				8C5666AD29E7CCB600F072D8 /* SceneDelegate.swift */,
+				8C5721922A0E020400CA3EB8 /* secondTableViewCell.swift */,
 				8C4F33B629F10CFC00B66430 /* ViewController13.swift */,
 				8C3BB04529EE57FD004E2758 /* ViewController10.swift */,
+				8C496EAC2A1DD6BF000925FE /* libraryTableViewCell.swift */,
+				8C61E7E32A1C7BC5006FB6FA /* searchCollectionViewCell.swift */,
 				8C3BB04929EE71F3004E2758 /* TableViewCell2.swift */,
 				8C09C49D29F18C9E0097F803 /* ViewController14.swift */,
 				8C09C49F29F18EAB0097F803 /* spotifyCollectionViewCell.swift */,
@@ -149,6 +153,8 @@
 				8C5666BF29E7DE6900F072D8 /* ViewController2.swift */,
 				8C5666AF29E7CCB600F072D8 /* ViewController.swift */,
 				8C5666B129E7CCB600F072D8 /* Main.storyboard */,
+				8C6279FE2A3055D3003BB16C /* TableViewCelllibrary.swift */,
+				8CDE46832A28672E005C55F1 /* ViewControllercellnavigate.swift */,
 				8C3E4C2A2A15F87A0042F721 /* fourCollectionViewCell.swift */,
 				8C3E4C282A15F81C0042F721 /* fiveTableViewCell.swift */,
 				8C3E4C262A15F0310042F721 /* thirdCollectionViewCell.swift */,
@@ -256,6 +262,7 @@
 				8C2FDB8929E8453F00239204 /* ViewController4.swift in Sources */,
 				8C68B62829EEDD3900ACE79C /* myCollectionViewCell.swift in Sources */,
 				8C3E4C252A15EFA20042F721 /* fourTableViewCell.swift in Sources */,
+				8C6279FF2A3055D3003BB16C /* TableViewCelllibrary.swift in Sources */,
 				8C4E9A5129FA42750021BB37 /* homepage.swift in Sources */,
 				8C09C49E29F18C9E0097F803 /* ViewController14.swift in Sources */,
 				8C3BB04A29EE71F3004E2758 /* TableViewCell2.swift in Sources */,
@@ -263,6 +270,7 @@
 				8C5666B029E7CCB600F072D8 /* ViewController.swift in Sources */,
 				8C68B62629EEDAEE00ACE79C /* ViewController12.swift in Sources */,
 				8C5666C029E7DE6900F072D8 /* ViewController2.swift in Sources */,
+				8CDE46842A28672E005C55F1 /* ViewControllercellnavigate.swift in Sources */,
 				8C4F33B929F1176900B66430 /* popTableViewCell.swift in Sources */,
 				8C5721952A0E066C00CA3EB8 /* firstCollectionViewCell.swift in Sources */,
 				8C4E9A5329FA43160021BB37 /* searchPage.swift in Sources */,

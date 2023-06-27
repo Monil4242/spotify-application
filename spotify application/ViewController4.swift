@@ -32,16 +32,46 @@ class ViewController4: UIViewController {
 
         
     }
+    func showalert(message:String){
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction.init(title: "Ok", style: .default))
+        alert.addAction(UIAlertAction.init(title: "Cancel", style: .destructive))
+        present(alert, animated: true)
+    
+    }
     func navigate(){
         let a = storyboard?.instantiateViewController(withIdentifier: "ViewController6") as! ViewController6
         navigationController?.pushViewController(a, animated: true)
     }
     
     @IBAction func logInButtonAction(_ sender: UIButton) {
+        if emailTextField.text == "" && passwordTextfield.text == ""{
+            showalert(message: "Please Enter Your User Name & Password")
+        }
+        else if emailTextField.text == ""{
+            showalert(message: "Please Enter Your User Name")
+        }
+        else if passwordTextfield.text == ""{
+            showalert(message: "Please Enter Your Password")
+            //navigate()
+
+        }
+        if emailTextField.text == "monilsojitra42@gmail.com" && passwordTextfield.text == "monilsojitra4242" {
+            navigate()
+           
+       }
+       else{
+           passwordalert()
+       }
+    }
+    func passwordalert(){
+        let alert = UIAlertController(title: "Incorrect password", message: "The Password you Entered is incorrect.Please try again", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        present(alert, animated: true)
     }
     
    
     @IBAction func withoutPasswordButtonAction(_ sender: UIButton) {
-        navigate()
+        //navigate()
     }
 }

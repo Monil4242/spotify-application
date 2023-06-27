@@ -40,6 +40,10 @@ class searchPage: UIViewController,UICollectionViewDelegate,UICollectionViewData
         cell.layer.cornerRadius = 10
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let n = storyboard?.instantiateViewController(withIdentifier: "homepage") as! homepage
+        navigationController?.pushViewController(n, animated: true)
+    }
     
 
     
