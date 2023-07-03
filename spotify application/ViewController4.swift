@@ -16,6 +16,8 @@ class ViewController4: UIViewController {
     @IBOutlet weak var logInot: UIButton!
     
     @IBOutlet weak var logInWithoutPasswordot: UIButton!
+    
+    @IBOutlet weak var passwordShow: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.layer.cornerRadius = 4
@@ -28,6 +30,7 @@ class ViewController4: UIViewController {
         logInWithoutPasswordot.layer.masksToBounds = true
         logInWithoutPasswordot.layer.borderColor = UIColor.gray.cgColor
         logInWithoutPasswordot.layer.borderWidth = 1
+        passwordShow.addTarget(self, action: #selector(togglePasswordVisiblity),for:.touchUpInside)
         
 
         
@@ -42,6 +45,16 @@ class ViewController4: UIViewController {
     func navigate(){
         let a = storyboard?.instantiateViewController(withIdentifier: "ViewController6") as! ViewController6
         navigationController?.pushViewController(a, animated: true)
+    }
+    @objc func togglePasswordVisiblity(){
+        passwordTextfield.isSecureTextEntry.toggle()
+        
+        if passwordTextfield.isSecureTextEntry{
+            passwordShow.setImage(UIImage(named: "hide"), for: .normal)
+        }
+        else{
+            passwordShow.setImage(UIImage(named: "view"), for: .normal)
+        }
     }
     
     @IBAction func logInButtonAction(_ sender: UIButton) {

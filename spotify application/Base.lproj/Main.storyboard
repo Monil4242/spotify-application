@@ -1139,7 +1139,7 @@
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="fourCollectionViewCell" reuseIdentifier="collectioncell4" id="hIO-x4-d8a" customClass="fourCollectionViewCell" customModule="spotify_application" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="21" width="180" height="180"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="xSK-hm-YIy">
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xSK-hm-YIy">
                                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
@@ -1186,7 +1186,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ael-wE-n0X"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="G8U-nc-lrV"/>
                     <connections>
@@ -1630,6 +1630,12 @@
                                     <action selector="withoutPasswordButtonAction:" destination="FUt-86-GMu" eventType="touchUpInside" id="Awu-b7-MEr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh5-Ce-3IY">
+                                <rect key="frame" x="319" y="362" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="hide"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iZC-I8-JDj"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1638,12 +1644,13 @@
                         <outlet property="emailTextField" destination="RMe-t7-vIy" id="86e-7L-fzH"/>
                         <outlet property="logInWithoutPasswordot" destination="GPZ-44-RJh" id="nmN-DL-ULU"/>
                         <outlet property="logInot" destination="ZgK-bS-NRo" id="ZqG-qa-3Ec"/>
+                        <outlet property="passwordShow" destination="Wh5-Ce-3IY" id="rJG-DI-ANZ"/>
                         <outlet property="passwordTextfield" destination="hD0-Vu-OHn" id="3Kw-dN-2R1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ing-aj-0Gy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3668" y="4"/>
+            <point key="canvasLocation" x="3667.9389312977096" y="3.5211267605633805"/>
         </scene>
         <!--View Controller9-->
         <scene sceneID="7qi-Ei-TGx">
@@ -2075,6 +2082,7 @@
         <image name="download" width="225" height="225"/>
         <image name="draw" width="512" height="512"/>
         <image name="facebook" width="32" height="32"/>
+        <image name="hide" width="24" height="24"/>
         <image name="home" width="24" height="24"/>
         <image name="library" width="24" height="24"/>
         <image name="m" width="1200" height="1200"/>

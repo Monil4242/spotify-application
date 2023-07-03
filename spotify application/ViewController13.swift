@@ -11,6 +11,8 @@ class ViewController13: UIViewController,UITableViewDelegate,UITableViewDataSour
     
     @IBOutlet weak var pop: UIView!
     
+    var nav : UINavigationController?
+    
     @IBOutlet weak var img: UIImageView!
     
     @IBOutlet weak var tb: UITableView!
@@ -60,6 +62,10 @@ class ViewController13: UIViewController,UITableViewDelegate,UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
         
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let n = storyboard?.instantiateViewController(withIdentifier: "homepage") as! homepage
+        nav?.pushViewController(n, animated: false)
     }
     
 
